@@ -47,8 +47,8 @@
     	let units=$("input:checked").length?$("input:checked").val():"imperial";
     	let u=(units=="imperial"?" F":" C");
     	let appid="b5307a0e81feefb46429e0326b92b8a1";
-		let query = "http://api.openweathermap.org/data/2.5/weather?q="+ loc +"&APPID=" + appid +"&units="+ units;
-		let iconURL="http://openweathermap.org/img/wn/"
+		let query = "https://api.openweathermap.org/data/2.5/weather?q="+ loc +"&APPID=" + appid +"&units="+ units;
+		let iconURL="https://openweathermap.org/img/wn/"
         console.log("Query is :" + query);
         $.getJSON(query,function(json){
             console.log(JSON.stringify(json));
